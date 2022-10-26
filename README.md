@@ -1,8 +1,8 @@
-# Fojini Decentralized Exchange
+# Simple Decentralized Exchange
 
 ### About
 
-Fojini is a simple Ethereum based decentralized exchange with its own token Fojini, has low or no trading fees if you are lucky. Decentralized exchange allows for trustless exchange of assets and tokens on Ethereum without giving away control of your assets.
+This is a simple Ethereum based decentralized exchange. Decentralized exchange allows for trustless exchange of assets and tokens on Ethereum without giving away control of your assets.
 
 ### Usage
 
@@ -12,7 +12,7 @@ You need to have [Metamask Wallet](https://metamask.io/). Connect to the app usi
 
 ### Deployment
 
-Smart Contracts deployed to Ethereum [Rinkeby Testnet](https://www.rinkeby.io/#stats) and [Kovan Testnest](https://kovan-testnet.github.io/website/). The smart contracts are not upgradeable. App deployed on [Heroku](https://www.heroku.com/) and is available on site [https://fojini.herokuapp.com/](https://fojini.herokuapp.com/) but must have Metamask installed on your computer.
+Smart Contracts deployed to Ethereum [Rinkeby Testnet](https://www.rinkeby.io/#stats) and [Kovan Testnest](https://kovan-testnet.github.io/website/). The smart contracts are not upgradeable.
 
 ### Technology Stack and Tools
 
@@ -34,27 +34,7 @@ You need to have [ganache-cli](https://www.npmjs.com/package/ganache-cli) instal
 
 Clone the project
 
-```sh
-$ git clone https://github.com/MatricksDeCoder/Fojini-DEX.git
-$ cd Fojini-DEX
-```
-
-##### Folder / Directory Structure
-
-- Fojini Dex
-  - migrations
-  - public
-  - scripts
-  - src
-    - abis
-    - components
-    - contracts
-    - flats
-    - store
-      index.js
-  - tests
-
-Node version used was v16.13.0
+Node version is v16.13.0
 
 Install the dependancies
 
@@ -103,25 +83,3 @@ To interact with contracts, exchange with Metamask you need Metamask installed
 If using ganache copy private key from ganache cli to Metmask
 If want to interact with deployed contracts on other networks not local switch network on Metamask
 
-### Other documents for project
-
-| Doc             | Available at                                               | About                                                        |
-| --------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| Design Patterns | [design_pattern_decisions.md](design_pattern_decisions.md) | Design pattern decisions                                     |
-| Security        | [avoiding_common_attacks.md](avoiding_common_attacks.md)   | Security considerations and implementations                  |
-| Addresses       | [deployed_addresses.txt](deployed_addresses.txt)           | Addresses and networks and testnest where contracts deployed |
-| Contributing    | [Contributing.md](Contributing.md)                         | How to contribute to project                                 |
-
-### Todos
-
-- Add more Etheruem tokens to trade
-- Extend the Fojini token
-- Make contract upgradeable
-- Explore protocols like 0x etc
-- Explore more DEFI intergration e.g Compound
-- Explore more complex orders, matching etc and executions on exchange
-- Routing on front end eg Admin panel to show status exchange,execute emergency etc
-
-## License
-
-MIT
